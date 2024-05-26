@@ -1,0 +1,68 @@
+[
+  {
+    "id": "1",
+    "name": "Username",
+    "type": "text",
+    "required": true,
+    "regex": "^[a-zA-Z0-9_]{3,15}$"
+  },
+  {
+    "id": "2",
+    "name": "Password",
+    "type": "password",
+    "required": true,
+    "regex": "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$"
+  },
+  {
+    "id": "3",
+    "name": "Gender",
+    "type": "radio",
+    "required": true,
+    "options": [
+      { "label": "Male", "value": "male" },
+      { "label": "Female", "value": "female" }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Hobbies",
+    "type": "checkbox",
+    "required": true,
+    "options": [
+      { "label": "Reading", "value": "reading" },
+      { "label": "Traveling", "value": "traveling" },
+      { "label": "Gaming", "value": "gaming" }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Country",
+    "type": "select",
+    "required": true,
+    "multipleSelect": false,
+    "options": [
+      { "label": "United States", "value": "us" },
+      { "label": "Canada", "value": "ca" },
+      { "label": "United Kingdom", "value": "uk" }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Favorite Fruits",
+    "type": "select",
+    "required": false,
+    "multipleSelect": true,
+    "options": [
+      { "label": "Apple", "value": "apple" },
+      { "label": "Banana", "value": "banana" },
+      { "label": "Cherry", "value": "cherry" }
+    ]
+  },
+  {
+    "id": "7",
+    "name": "Profile Picture",
+    "type": "file",
+    "required": false,
+    "fileFormatSupported": [".jpg", ".png",".pdf"]
+  }
+]
